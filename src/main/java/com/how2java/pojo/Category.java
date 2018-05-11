@@ -1,6 +1,8 @@
 package com.how2java.pojo;
 
-public class Category {
+import java.io.Serializable;
+
+public class Category implements Serializable{
 	private int id;
 	private String name;
 	public int getId() {

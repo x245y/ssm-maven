@@ -41,7 +41,7 @@ public class CategoryController {
 		mav.setViewName("listCategory");
 		return mav;
 	}
-	@RequestMapping(value="post")
+	@RequestMapping(value="post", method = RequestMethod.POST)
 	public @ResponseBody List<Category> listCategory1(@RequestBody Person p){
 		List<Category> cs= categoryService.list();
 	    return cs;  
